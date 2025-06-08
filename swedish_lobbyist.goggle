@@ -1,0 +1,26 @@
+! name: Swedish lobbyists
+! description: A search filter to prioritise Swedish news sources and fine-tune results towards reputable sources about Swedish lobbyism
+! public: false
+! author: Pierre Mesure
+
+! Press releases
+$boost=1,site=news.cision.com
+
+! News
+$boost=1,site=tt.se
+$boost=1,site=aftonbladet.se
+$boost=1,site=dn.se
+$boost=1,site=expressen.se
+$boost=1,site=omni.se
+$boost=1,site=altinget.se
+
+! Official sources
+$boost=1,site=regeringen.se
+
+! PR firms
+$boost=1,site=diplomatcom.com
+$boost=1,site=downtownadvisors.se
+$boost=1,site=kreab.com
+$boost=1,site=nordicpa.se
+$boost=1,site=pauesaberg.se
+$boost=1,site=www.rudpedersen.com
