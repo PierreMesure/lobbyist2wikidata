@@ -3,16 +3,22 @@
 ! public: false
 ! author: Pierre Mesure
 
+! Remove Wikipedia results
+$discard,site=wikipedia.org
+
 ! Press releases
 $boost=1,site=news.cision.com
+$boost=1,site=mynewsdesk.com
 
 ! News
-$boost=1,site=tt.se
 $boost=1,site=aftonbladet.se
+$boost=1,site=altinget.se
+$boost=1,site=di.se
 $boost=1,site=dn.se
 $boost=1,site=expressen.se
 $boost=1,site=omni.se
-$boost=1,site=altinget.se
+$boost=1,site=svd.se
+$boost=1,site=tt.se
 
 ! Official sources
 $boost=1,site=regeringen.se
@@ -23,4 +29,4 @@ $boost=1,site=downtownadvisors.se
 $boost=1,site=kreab.com
 $boost=1,site=nordicpa.se
 $boost=1,site=pauesaberg.se
-$boost=1,site=www.rudpedersen.com
+$boost=1,site=rudpedersen.com
